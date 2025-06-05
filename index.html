@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasfiah Tahsin Prima</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 56px;
+      }
+      .section-padding {
+        padding: 56px 0;
+      }
+      .navbar-brand {
+        font-weight: bold;
+      }
+      .education-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .university-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 8px;
+        background: #f8f9fa;
+        padding: 8px;
+      }
+      .degree-title {
+        color: #2c3e50;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .university-name {
+        color: #007bff;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .duration {
+        color: #6c757d;
+        font-size: 0.95em;
+        margin-bottom: 5px;
+      }
+      .achievement {
+        color: #28a745;
+        font-weight: 500;
+        font-size: 0.9em;
+      }
+      .education-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .social-icons a {
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        font-size: 1.2em;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+      .social-icons a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .social-icons .linkedin {
+        background: #0077b5;
+        color: white;
+      }
+      .social-icons .linkedin:hover {
+        background: #005582;
+        color: white;
+      }
+      .social-icons .twitter {
+        background: #1da1f2;
+        color: white;
+      }
+      .social-icons .twitter:hover {
+        background: #0d8bd9;
+        color: white;
+      }
+      .social-icons .email {
+        background: #28a745;
+        color: white;
+      }
+      .social-icons .email:hover {
+        background: #1e7e34;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Tasfiah Prima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#others">Others</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <section id="home" class="section-padding">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img
+              src="prima.jpeg"
+              alt="Tasfiah Prima"
+              class="img-fluid rounded-circle mb-3"
+              style="max-width: 250px"
+            />
+            <div class="social-icons mb-4">
+              <a href="#" class="linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="twitter" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="email" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3 class="display-5 mb-4">About Me</h3>
+            <p class="mb-4">
+              I am Tasfiah Tahsin Prima, a dedicated researcher and graduate
+              student in Biochemistry and Molecular Biology at the University of
+              Dhaka. Currently pursuing my M.Sc. degree, I have a strong
+              academic background with a B.Sc. CGPA of 3.95/4.00, graduating 3rd
+              in my class.
+            </p>
+            <p class="mb-4">
+              My research interests lie in molecular biology, bioinformatics,
+              and personalized medicine. I have hands-on experience in various
+              laboratory techniques including DNA isolation, PCR, gel
+              electrophoresis, bacterial culture, and cell culture techniques.
+              My recent training in biosafety and animal cell culture has
+              expanded my expertise in BSL-2 laboratory operations.
+            </p>
+            <p>
+              Beyond academics, I am actively involved in science communication
+              and outreach, having organized the Bangladesh National Science
+              Olympiad and hosted various cultural programs. I am passionate
+              about advancing scientific research and contributing to the field
+              of molecular biology and biotechnology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section-->
+      <section id="education" class="section-padding">
+        <div class="container">
+          <h3 class="display-5 mb-5 text-center text-dark">Education</h3>
+
+          <div class="education-container">
+            <!-- M.Sc. Education Card -->
+            <div class="education-card">
+              <div class="row align-items-center">
+                <div class="col-md-2 col-3 text-center mb-3 mb-md-0">
+                  <img
+                    src="DU-logo.jpg"
+                    alt="University of Dhaka Logo"
+                    class="university-logo"
+                  />
+                </div>
+                <div class="col-md-10 col-9 text-start">
+                  <h5 class="degree-title">
+                    Master of Science in Biochemistry and Molecular Biology
+                  </h5>
+                  <p class="university-name mb-2">University of Dhaka</p>
+                  <p class="duration mb-1">November 2024 - April 2026</p>
+                  <p class="achievement mb-0">Currently Pursuing</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- B.Sc. Education Card -->
+            <div class="education-card">
+              <div class="row align-items-center">
+                <div class="col-md-2 col-3 text-center mb-3 mb-md-0">
+                  <img
+                    src="DU-logo.jpg"
+                    alt="University of Dhaka Logo"
+                    class="university-logo"
+                  />
+                </div>
+                <div class="col-md-10 col-9 text-start">
+                  <h5 class="degree-title">
+                    Bachelor of Science in Biochemistry and Molecular Biology
+                  </h5>
+                  <p class="university-name mb-2">University of Dhaka</p>
+                  <p class="duration mb-1">January 2020 - October 2024</p>
+                  <p class="achievement mb-0">
+                    CGPA: 3.95/4.00 • Graduated 3rd in Class
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-padding">
+        <div class="container">
+          <h3 class="display-5 mb-5 text-center text-dark">Skills</h3>
+
+          <div class="row">
+            <!-- Molecular Biology Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">
+                    Molecular Biology
+                  </h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Isolation of plasmid & genomic DNA</li>
+                    <li class="mb-2">• PCR, Rt-PCR</li>
+                    <li class="mb-2">• Gel electrophoresis</li>
+                    <li class="mb-2">• SDS-PAGE</li>
+                    <li class="mb-2">• Restriction digestion of DNA</li>
+                    <li class="mb-2">• Characterization of pGLO plasmid</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Microbiology Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">Microbiology</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Bacterial culture</li>
+                    <li class="mb-2">• Cell passage</li>
+                    <li class="mb-2">• Preservation</li>
+                    <li class="mb-2">• Media preparation</li>
+                    <li class="mb-2">• Plasmid transformation</li>
+                    <li class="mb-2">• Antimicrobial testing</li>
+                    <li class="mb-2">• Cytotoxicity examination</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Clinical & Biochemical Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">
+                    Clinical & Biochemical
+                  </h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Blood Grouping</li>
+                    <li class="mb-2">• White cell count</li>
+                    <li class="mb-2">• Leukocytes separation</li>
+                    <li class="mb-2">• Thin Layer Chromatography</li>
+                    <li class="mb-2">
+                      • High Performance Liquid Chromatography
+                    </li>
+                    <li class="mb-2">• Gel Filtration Chromatography</li>
+                    <li class="mb-2">• Spectrophotometric analysis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bioinformatics Card -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">
+                    Bioinformatics & Analysis
+                  </h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Protein structure analysis</li>
+                    <li class="mb-2">• BLAST, CLUSTALW</li>
+                    <li class="mb-2">• OMIM, Expasy</li>
+                    <li class="mb-2">• SWISS-MODEL</li>
+                    <li class="mb-2">• R, Python</li>
+                    <li class="mb-2">• SPSS, Microsoft Excel</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p>&copy; 2025 Tasfiah Prima. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth Scrolling -->
+    <script>
+      // Smooth scrolling for navbar links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Update active nav link on scroll
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
