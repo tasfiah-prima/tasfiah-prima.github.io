@@ -1,0 +1,26 @@
+          <div class="col-md-8">
+            <h1 class="display-5 mb-4">About Me</h1>
+            <p class="mb-4">
+              I am Tasfiah Tahsin Prima, a dedicated researcher and graduate
+              student in Department of <a href ="https://www.du.ac.bd/body/BCH" target="_blank">Biochemistry and Molecular Biology </a> at the University of
+              Dhaka. Currently pursuing my M.Sc. degree, under the supervision of Dr Mohammad Riazul Islam
+              at the <a href = "https://www.molbiolab.du.ac.bd/" target="_blank">Molecular Biology Lab</a>.
+              I have a strong academic background with a B.Sc. CGPA of 3.95/4.00, graduating 3rd
+              in my class.
+            </p>
+            <p class="mb-4">
+              My research interests lie in molecular biology, bioinformatics,
+              and personalized medicine. I have hands-on experience in various
+              laboratory techniques including DNA isolation, PCR, gel
+              electrophoresis, bacterial culture, and cell culture techniques.
+              My recent training in biosafety and animal cell culture has
+              expanded my expertise in BSL-2 laboratory operations.
+            </p>
+            <p>
+              Beyond academics, I am actively involved in science communication
+              and outreach, having organized the Bangladesh National Science
+              Olympiad and hosted various cultural programs. I am passionate
+              about advancing scientific research and contributing to the field
+              of molecular biology and biotechnology.
+            </p>
+          </div>

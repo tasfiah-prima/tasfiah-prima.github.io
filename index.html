@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasfiah Tahsin Prima</title>
+    <title>
+      Tasfiah Tahsin Prima - Biochemistry & Molecular Biology Researcher
+    </title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Tasfiah Tahsin Prima is a dedicated researcher and graduate student in Biochemistry and Molecular Biology at the University of Dhaka, specializing in molecular biology."
+    />
+    <meta
+      name="keywords"
+      content="Tasfiah Prima, Biochemistry, Molecular Biology, University of Dhaka, Research, Bioinformatics, DNA, PCR, Cell Culture, Bangladesh"
+    />
+    <meta name="author" content="Tasfiah Tahsin Prima" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Tasfiah Tahsin Prima - Biochemistry & Molecular Biology Researcher"
+    />
+    <meta
+      property="og:description"
+      content="Graduate student and researcher specializing in molecular biology at University of Dhaka."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tasfiahprima.com" />
+    <meta property="og:image" content="prima.jpeg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tasfiah Tahsin Prima - Biochemistry Researcher"
+    />
+    <meta
+      name="twitter:description"
+      content="Graduate student and researcher in Biochemistry and Molecular Biology at University of Dhaka."
+    />
+    <meta name="twitter:image" content="prima.jpeg" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwMDdiZmYiLz4KPHR5ZGU+VDwvdGV4dD4KPC9zdmc+"
+    />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +64,7 @@
         padding-top: 56px;
       }
       .section-padding {
-        padding: 56px 0;
+        padding: 65px 0;
       }
       .navbar-brand {
         font-weight: bold;
@@ -28,14 +75,23 @@
         padding: 30px;
         margin-bottom: 25px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .education-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       }
       .university-logo {
         width: 80px;
         height: 80px;
         object-fit: contain;
         border-radius: 8px;
-        background: #f8f9fa;
         padding: 8px;
+        background: #f8f9fa;
+        transition: transform 0.3s ease;
+      }
+      .university-logo:hover {
+        transform: scale(1.05);
       }
       .degree-title {
         color: #2c3e50;
@@ -61,6 +117,44 @@
         max-width: 800px;
         margin: 0 auto;
       }
+
+      /* Profile Image Handling */
+      .profile-image {
+        max-width: 250px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #000000;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: #f8f9fa;
+      }
+      .profile-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+      }
+
+      /* Image Loading States */
+      .image-placeholder {
+        background: linear-gradient(
+          90deg,
+          #f0f0f0 25%,
+          #e0e0e0 50%,
+          #f0f0f0 75%
+        );
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+
       .social-icons a {
         width: 45px;
         height: 45px;
@@ -85,12 +179,12 @@
         background: #005582;
         color: white;
       }
-      .social-icons .twitter {
-        background: #1da1f2;
+      .social-icons .instagram {
+        background: #e4405f;
         color: white;
       }
-      .social-icons .twitter:hover {
-        background: #0d8bd9;
+      .social-icons .instagram:hover {
+        background: #c13584;
         color: white;
       }
       .social-icons .email {
@@ -100,6 +194,74 @@
       .social-icons .email:hover {
         background: #1e7e34;
         color: white;
+      }
+
+      /* Back to Top Button */
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.2em;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+      }
+
+      .back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .back-to-top:hover {
+        background: #0056b3;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+      }
+
+      /* Responsive Image Handling */
+      @media (max-width: 768px) {
+        .profile-image {
+          max-width: 200px;
+          height: 200px;
+        }
+
+        .university-logo {
+          width: 60px;
+          height: 60px;
+        }
+
+        .back-to-top {
+          bottom: 20px;
+          right: 20px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .profile-image {
+          max-width: 150px;
+          height: 150px;
+        }
+      }
+
+      /* Skills Cards Enhancement */
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       }
     </style>
   </head>
@@ -124,14 +286,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#research">Research</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#others">Others</a>
+              <a class="nav-link" href="#others">Awards</a>
             </li>
           </ul>
         </div>
@@ -140,35 +299,69 @@
 
     <div class="container">
       <!-- Hero Section -->
-      <section id="home" class="section-padding">
+      <section id="about" class="section-padding">
         <div class="row align-items-center">
           <div class="col-md-4 text-center">
             <img
-              src="prima.jpeg"
-              alt="Tasfiah Prima"
-              class="img-fluid rounded-circle mb-3"
-              style="max-width: 250px"
+              src="prima.jpg"
+              alt="Tasfiah Tahsin Prima - Biochemistry Researcher"
+              class="profile-image mb-3"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
+            <div
+              class="profile-image image-placeholder mb-3"
+              style="
+                display: none;
+                align-items: center;
+                justify-content: center;
+                color: #666;
+              "
+            >
+              <i class="fas fa-user fa-3x"></i>
+            </div>
             <div class="social-icons mb-4">
-              <a href="#" class="linkedin" title="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/tasfiah-prima/"
+                class="linkedin"
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" class="twitter" title="Twitter">
-                <i class="fab fa-twitter"></i>
+              <a
+                href="https://www.instagram.com/tasfia.prima/"
+                class="instagram"
+                title="Instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram"></i>
               </a>
-              <a href="#" class="email" title="Email">
+              <a
+                href="mailto:tasfia.prima33@gmail.com"
+                class="email"
+                title="Email"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </div>
           </div>
           <div class="col-md-8">
-            <h3 class="display-5 mb-4">About Me</h3>
+            <h1 class="display-5 mb-4">About Me</h1>
             <p class="mb-4">
               I am Tasfiah Tahsin Prima, a dedicated researcher and graduate
-              student in Biochemistry and Molecular Biology at the University of
-              Dhaka. Currently pursuing my M.Sc. degree, I have a strong
-              academic background with a B.Sc. CGPA of 3.95/4.00, graduating 3rd
-              in my class.
+              student in Department of
+              <a href="https://www.du.ac.bd/body/BCH" target="_blank"
+                >Biochemistry and Molecular Biology
+              </a>
+              at the University of Dhaka. Currently pursuing my M.Sc. degree,
+              under the supervision of Dr Mohammad Riazul Islam at the
+              <a href="https://www.molbiolab.du.ac.bd/" target="_blank"
+                >Molecular Biology Lab</a
+              >. I have a strong academic background with a B.Sc. CGPA of
+              3.95/4.00, graduating 3rd in my class.
             </p>
             <p class="mb-4">
               My research interests lie in molecular biology, bioinformatics,
@@ -192,7 +385,7 @@
       <!-- Education Section-->
       <section id="education" class="section-padding">
         <div class="container">
-          <h3 class="display-5 mb-5 text-center text-dark">Education</h3>
+          <h2 class="display-5 mb-5 text-center text-dark">Education</h2>
 
           <div class="education-container">
             <!-- M.Sc. Education Card -->
@@ -203,12 +396,25 @@
                     src="DU-logo.jpg"
                     alt="University of Dhaka Logo"
                     class="university-logo"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                   />
+                  <div
+                    class="university-logo image-placeholder"
+                    style="
+                      display: none;
+                      align-items: center;
+                      justify-content: center;
+                      color: #666;
+                    "
+                  >
+                    <i class="fas fa-university"></i>
+                  </div>
                 </div>
                 <div class="col-md-10 col-9 text-start">
-                  <h5 class="degree-title">
+                  <h3 class="degree-title">
                     Master of Science in Biochemistry and Molecular Biology
-                  </h5>
+                  </h3>
                   <p class="university-name mb-2">University of Dhaka</p>
                   <p class="duration mb-1">November 2024 - April 2026</p>
                   <p class="achievement mb-0">Currently Pursuing</p>
@@ -224,12 +430,25 @@
                     src="DU-logo.jpg"
                     alt="University of Dhaka Logo"
                     class="university-logo"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                   />
+                  <div
+                    class="university-logo image-placeholder"
+                    style="
+                      display: none;
+                      align-items: center;
+                      justify-content: center;
+                      color: #666;
+                    "
+                  >
+                    <i class="fas fa-university"></i>
+                  </div>
                 </div>
                 <div class="col-md-10 col-9 text-start">
-                  <h5 class="degree-title">
+                  <h3 class="degree-title">
                     Bachelor of Science in Biochemistry and Molecular Biology
-                  </h5>
+                  </h3>
                   <p class="university-name mb-2">University of Dhaka</p>
                   <p class="duration mb-1">January 2020 - October 2024</p>
                   <p class="achievement mb-0">
@@ -245,16 +464,16 @@
       <!-- Skills Section -->
       <section id="skills" class="section-padding">
         <div class="container">
-          <h3 class="display-5 mb-5 text-center text-dark">Skills</h3>
+          <h2 class="display-5 mb-5 text-center text-dark">Skills</h2>
 
           <div class="row">
             <!-- Molecular Biology Card -->
             <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card h-100 border-0 shadow-sm bg-light">
+              <div class="card h-100 border-0 shadow-sm bg-white">
                 <div class="card-body">
-                  <h5 class="card-title text-primary mb-3">
+                  <h4 class="card-title text-primary mb-3">
                     Molecular Biology
-                  </h5>
+                  </h4>
                   <ul class="list-unstyled">
                     <li class="mb-2">• Isolation of plasmid & genomic DNA</li>
                     <li class="mb-2">• PCR, Rt-PCR</li>
@@ -269,9 +488,9 @@
 
             <!-- Microbiology Card -->
             <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card h-100 border-0 shadow-sm bg-light">
+              <div class="card h-100 border-0 shadow-sm bg-white">
                 <div class="card-body">
-                  <h5 class="card-title text-primary mb-3">Microbiology</h5>
+                  <h4 class="card-title text-primary mb-3">Microbiology</h4>
                   <ul class="list-unstyled">
                     <li class="mb-2">• Bacterial culture</li>
                     <li class="mb-2">• Cell passage</li>
@@ -287,11 +506,11 @@
 
             <!-- Clinical & Biochemical Card -->
             <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card h-100 border-0 shadow-sm bg-light">
+              <div class="card h-100 border-0 shadow-sm bg-white">
                 <div class="card-body">
-                  <h5 class="card-title text-primary mb-3">
+                  <h4 class="card-title text-primary mb-3">
                     Clinical & Biochemical
-                  </h5>
+                  </h4>
                   <ul class="list-unstyled">
                     <li class="mb-2">• Blood Grouping</li>
                     <li class="mb-2">• White cell count</li>
@@ -309,11 +528,11 @@
 
             <!-- Bioinformatics Card -->
             <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card h-100 border-0 shadow-sm bg-light">
+              <div class="card h-100 border-0 shadow-sm bg-white">
                 <div class="card-body">
-                  <h5 class="card-title text-primary mb-3">
+                  <h4 class="card-title text-primary mb-3">
                     Bioinformatics & Analysis
-                  </h5>
+                  </h4>
                   <ul class="list-unstyled">
                     <li class="mb-2">• Protein structure analysis</li>
                     <li class="mb-2">• BLAST, CLUSTALW</li>
@@ -332,76 +551,101 @@
       <!-- Others Section -->
       <section id="others" class="section-padding">
         <div class="container">
-          <h3 class="display-6 mb-2 text-center text-dark">
+          <h2 class="display-6 mb-4 text-center text-dark">
             Awards and Leadership
-          </h3>
+          </h2>
 
           <div class="education-container">
-            <!-- M.Sc. Education Card -->
             <div class="education-card">
-                <ul class="mb-0">
-                <li>
-                  <strong>Selected for the Dean’s Honor Award for academic excellence</strong>
+              <ul class="mb-0">
+                <li class="mb-3">
+                  <strong
+                    >Selected for the Dean's Honor Award for academic
+                    excellence</strong
+                  ><br />
                   University of Dhaka, 2025
                 </li>
-                <li>
-                  <strong>Government Scholarship</strong>
-                  Awarded for outstanding results in Higher Secondary Certificate Exam, 2019
+                <li class="mb-3">
+                  <strong>Government Scholarship</strong><br />
+                  Awarded for outstanding results in Higher Secondary
+                  Certificate Exam, 2019
                 </li>
-                <li>
-                  <strong>Organizer, Bangladesh National Science Olympiad (2022, 2023)</strong>
+                <li class="mb-3">
+                  <strong
+                    >Organizer, Bangladesh National Science Olympiad (2022,
+                    2023)</strong
+                  ><br />
                   Organized national and regional science olympiad events.
                 </li>
-                <li>
-                  <strong>Hosted and performed at 5+ formal and cultural programs</strong>
+                <li class="mb-0">
+                  <strong
+                    >Hosted and performed at 5+ formal and cultural
+                    programs</strong
+                  ><br />
                   Biochemistry and Molecular Biology, University of Dhaka
                 </li>
-                </ul>
+              </ul>
             </div>
-        </div>
+          </div>
 
-        <h3 class="display-6 mb-2 text-center text-dark">
-          Training and Certifications
-        </h3>
-        <div class="education-container">
-            <!-- M.Sc. Education Card -->
+          <h2 class="display-6 mb-4 text-center text-dark">
+            Training and Certifications
+          </h2>
+          <div class="education-container">
             <div class="education-card">
-                <ul class="mb-0">
-                <li>
-                  <strong>Biosafety and Animal Cell Culture Techniques</strong>
-                  Performed various cell culture techniques, including cell passage, maintenance, seeding, counting, staining, preservation, thawing, cytotoxicity examinations and viral infection testing in a BSL-2 laboratory.
-                  Supervised by Dr: Sheikh Ariful Haque, Senior Scientist, CARS, University of Dhaka. 2024
+              <ul class="mb-0">
+                <li class="mb-3">
+                  <strong>Biosafety and Animal Cell Culture Techniques</strong
+                  ><br />
+                  Performed various cell culture techniques, including cell
+                  passage, maintenance, seeding, counting, staining,
+                  preservation, thawing, cytotoxicity examinations and viral
+                  infection testing in a BSL-2 laboratory. Supervised by Dr:
+                  Sheikh Ariful Haque, Senior Scientist, CARS, University of
+                  Dhaka. 2024
                 </li>
-                
-                <li>
-                  <strong>Python Skills For Handling Biological Data</strong>
+
+                <li class="mb-3">
+                  <strong>Python Skills For Handling Biological Data</strong
+                  ><br />
                   Offered through Stepik. May 2021
                 </li>
-                <li>
-                  <strong>Introduction to the Biology of Cancer</strong>
+                <li class="mb-3">
+                  <strong>Introduction to the Biology of Cancer</strong><br />
                   Johns Hopkins University through Coursera. May 2020
                 </li>
-                <li>
-                  <strong>DNA Decoded</strong>
+                <li class="mb-0">
+                  <strong>DNA Decoded</strong><br />
                   McMaster University through Coursera. Apr 2020
                 </li>
               </ul>
             </div>
-        
+          </div>
+        </div>
       </section>
-    </div></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
       <div class="container">
-        <p>&copy; 2025 Tasfiah Prima. All rights reserved.</p>
+        <p>&copy; 2025 Tasfiah Tahsin Prima. All rights reserved.</p>
+        <p class="mb-0">
+          <a href="mailto:tasfia.prima33@gmail.com" class="text-white">
+            <i class="fas fa-envelope me-2"></i>tasfia.prima33@gmail.com
+          </a>
+        </p>
       </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Smooth Scrolling -->
+    <!-- Custom JavaScript -->
     <script>
       // Smooth scrolling for navbar links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -435,6 +679,50 @@
           if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
           }
+        });
+      });
+
+      // Back to top button functionality
+      const backToTopButton = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
+
+      backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Image lazy loading optimization
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.remove("image-placeholder");
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        images.forEach((img) => imageObserver.observe(img));
+      });
+
+      // Preload critical images
+      window.addEventListener("load", function () {
+        const criticalImages = ["prima.jpeg", "DU-logo.jpg"];
+        criticalImages.forEach((src) => {
+          const img = new Image();
+          img.src = src;
         });
       });
     </script>
